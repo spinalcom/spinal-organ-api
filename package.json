@@ -1,0 +1,34 @@
+{
+  "name": "spinal-organ-bacnet",
+  "version": "1.5.7",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "npm run build && node dist/index.js",
+    "pm2": "npm run build && pm2 start ecosystem.config.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@datastructures-js/priority-queue": "^5.1.1",
+    "bacstack": "file:./lib/bacstack",
+    "big-json": "^3.1.0",
+    "json5": "^2.2.0",
+    "lodash": "^4.17.20",
+    "pm2": "^4.5.6",
+    "socket.io": "^3.1.1",
+    "spinal-model-bacnet": "git+https://github.com/spinalcom/spinal-model-bacnet.git#enteliweb",
+    "spinal-model-bmsnetwork": "git+https://github.com/spinalcom/spinal-model-bmsnetwork.git#bacnet",
+    "ts-priority-queue": "^0.1.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "babel-register": "^6.26.0",
+    "tslint": "^6.1.3",
+    "typescript": "^4.1.3"
+  }
+}
