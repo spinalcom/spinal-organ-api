@@ -52,7 +52,7 @@ const listenLoadType = (connect, organModel) => {
    // return new Promise((resolve, reject) => {
    /*loadTypeInSpinalCore(connect, 'SpinalDisoverModel', (spinalDisoverModel: SpinalDisoverModel) => {
       SpinalDiscoverCallback(spinalDisoverModel, organModel)
-   }, connectionErrorCallback);*/
+   }, connectionErrorCallback);*/ 
 
    loadTypeInSpinalCore(connect, 'SpinalApiDiscoverModel', (spinalApiDiscoverModel: SpinalApiDiscoverModel) => {
       SpinalDiscoverCallback(spinalApiDiscoverModel, organModel)
